@@ -1,0 +1,131 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Simple Blog Theme
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/jekyll-theme-simple-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://lorepirri.gitlab.io" # change this to the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Make sure to exclude 'vendor' from the build
+exclude: [vendor, "Gemfile", "Gemfile.lock"]
+
+# permalink: /:categories/:year/:month/:day/:title.html
+# none is equivalent to /:title.html
+# https://jekyllrb.com/docs/permalinks
+permalink: /:title.html
+
+google_analytics:
+
+# jekyll-theme-simple-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+jekyll-theme-simple-blog:
+  date_format: "%b %-d, %Y"
+
+theme: # leave it empty
+
+show_post_image_posts_list: false
+
+header:
+  image: /assets/patterns/symphony.png
+
+# social
+author:
+  name: "Simple Blog Theme"
+  short_bio:
+    en: Jekyll Blog Theme, Responsive, SEO and Facebook enabled
+    it: Jekyll Blog Theme, Responsive, con SEO e integrazione Facebook
+  picture: assets/img/profile-60.png
+
+image: /assets/img/profile-225.png
+
+#twitter:
+#  username:
+#instagram_username:
+
+#linkedin_username: lorepirri
+
+#  site:
+facebook:
+  publisher_id: 1474191545979552
+  profile_id: 1474191545979552
+  app_id: 126080721296732
+  authors: [1474191545979552]
+  #pixelcode: 1670622619859349
+
+
+# gitlab on site
+gitlab:
+  owner_url: https://gitlab.com/lorepirri
+
+# github on site
+github:
+  owner_url: https://github.com/lorepirri
+
+
+# translation
+
+t:
+  en:
+    latest-posts:  "Latest Posts"
+    read-more:  "read more"
+    on-word: "on"
+    contact: "Contact"
+    contact-page: "contact.md"
+    read-time: "min read"
+    comments: "comments"
+    go-to-home-page: "Go to the Home Page"
+    months:
+      january: "Jan"
+      february: "Feb"
+      march: "Mar"
+      april: "Apr"
+      may: "May"
+      june: "Jun"
+      july: "Jul"
+      august: "Aug"
+      september: "Sep"
+      october: "Oct"
+      november: "Nov"
+      december : "Dec"
+  it:
+    latest-posts:  "Ultimi Posts"
+    read-more:  "leggi"
+    on-word: "su"
+    contact: "Contatta"
+    contact-page: "contatta.md"
+    read-time: "min di lettura"
+    comments: "commenti"
+    go-to-home-page: "Vai alla Pagina Iniziale"
+    months:
+      january: "Gen"
+      february: "Feb"
+      march: "Mar"
+      april: "Apr"
+      may: "Mag"
+      june: "Giu"
+      july: "Lug"
+      august: "Ago"
+      september: "Set"
+      october: "Ott"
+      november: "Nov"
+      december : "Dic"
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      lang: "en"
+      category: articles

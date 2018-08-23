@@ -86,7 +86,7 @@ sitemap:
 
 				<!-- Posts -->
 				<section class="posts">
-				{% for post in site.posts limit:3 %}
+				{% for post in site.posts limit:4 %}
 				{% assign mod3 = forloop.index | modulo: 3 %}
 					<article>
 						<header>
@@ -99,14 +99,14 @@ sitemap:
 							<li><a href="{{ post.url | absolute_url }}" class="button">Full Article</a></li>
 						</ul>
 					</article>
-				{% if mod3 == 0 %}
+				{% comment %} {% if mod3 == 0 %}
 					<article>
 						<header>
 							<h2><a href="#">Sponsored</a></h2>
 						</header>
 
 					</article>
-				{% endif %}
+				{% endif %} {% endcomment %}
 				{% endfor %}
 				</section>
 			</div>

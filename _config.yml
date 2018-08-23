@@ -1,10 +1,10 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
+title:              Yao (Marc) Wang
+bio:                'hello world'
+description:        "This is Yao Wang, a hacker in China."
+locale:             zh_CN
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://marcwong.github.io/" # the base hostname & protocol for your site
 
 defaults:
 - scope:
@@ -35,18 +35,18 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+twitter:            
+facebook:           marcswong
+instagram:          
+github:             marcwong
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           Peking University, Beijing
+phone:              +86-134-0107-6331
+email:              yao.staufenberg@gmail.com
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-feed

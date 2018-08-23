@@ -1,10 +1,10 @@
 ---
 layout: null
-title: Jekyll Theme - Home Page - Massively
-description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+title: Yao Wang - Home Page
+description: This is Yao Wang's homepage. Come here and have some fun!
 sitemap:
     priority: 1.0
-    lastmod: 2017-11-02
+    lastmod: 2018-08-23
     changefreq: weekly
 ---
 <!DOCTYPE HTML>
@@ -26,10 +26,10 @@ sitemap:
 			<!-- Intro -->
 			<div id="intro">
 				<h2>{{site.title}}</h2>
-				<p>A master student in Peking University,<br />
-				also a frontend engineer. <br />
-				See <a href="https://github.com/{{site.github}}"  class="icon fa-github" rel="nofollow">github/MarcWong</a> 
-				for more!</p>
+				<p>An Idealist,<br />
+					a Cosmopolitan,<br />
+				and a frontend engineer. <br />
+				</p>
 				<ul class="actions">
 					<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 				</ul>
@@ -37,7 +37,7 @@ sitemap:
 
 			<!-- Header -->
 			<header id="header">
-				<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				<div class="logo">{{site.title}}</div>
 			</header>
 
 			<!-- Nav -->
@@ -45,9 +45,9 @@ sitemap:
 			{% include nav.html %}
 
 				<ul class="icons">
-					<li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+					<li><a href="https://weibo.com/u/{{site.weibo}}" class="icon fa-weibo" rel="nofollow"><span class="label">Weibo</span></a></li>
 					<li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-					<li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+					<li><a href="https://renren.com/{{site.renren}}" class="icon fa-renren" rel="nofollow"><span class="label">Renren</span></a></li>
 					<li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
 				</ul>
 				</nav>
@@ -58,15 +58,29 @@ sitemap:
 				<article class="post featured">
 					<header class="major">
 						{% comment %} <h2><a href="#">Massively is a versatile Jekyll theme</a></h2> {% endcomment %}
-						<p>自从弃用人人网之后，就再也没写过博客，算一算也有将近5年了。<br />
-						这次重新搭起来，以技术学习备忘录为主，另外也能记录记录生活，免得有酒的时候没故事讲。 <br />
-						我是王尧，这里是我的个人主页。</p>
+						<p>自从弃用人人网之后，就再也没写过博客，说起来也有5年了。<br />
+						重新搭起来这个博客，以技术备忘录为主，另外也记录记录生活，免得有酒的时候没故事讲。 <br />
+						我是王尧，这是我的主页。</p>
 					</header>
 					<a href="#" class="image main"><img src="{{ "/images/pic01.jpg" | absolute_url }}" alt="" /></a>
-					<h2> Your homepage </h2>
-					<p>Your homepage must clearly describe what your site is about.
-					Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
-					</p>
+					<blockquote style="text-align:center">
+						有了你顿觉增加风趣<br>
+						我每日每天都想见你<br>
+						那惧风与雨 那惧怕行雷<br>
+						见少一秒都空虚<br>
+						有了你顿觉轻松写意<br>
+						太快乐就跌一跤都有趣<br>
+						心中想与你 变做鸟和鱼<br>
+						置身海阔天空里<br>
+						并着翅在飞 轻松自在<br>
+						同吸清新空气<br>
+						游来又游去 湖海多美<br>
+						抛开人生的顾虑<br>
+						有了你顿觉轻松写意<br>
+						太快乐就跌一跤都有趣<br>
+						心中想与你 变做鸟和鱼<br>
+						置身海阔天空里
+					</blockquote>
 
 				</article>
 
@@ -82,7 +96,7 @@ sitemap:
 						<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
 						<p>{{ post.excerpt }}</p>
 						<ul class="actions">
-							<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+							<li><a href="{{ post.url | absolute_url }}" class="button">Full Article</a></li>
 						</ul>
 					</article>
 				{% if mod3 == 0 %}

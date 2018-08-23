@@ -13,82 +13,71 @@
 	<body class="is-loading">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
+			<!-- Header -->
+			<header id="header">
+				<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+			</header>
 
+			<!-- Nav -->
+			<nav id="nav">
 
-				<!-- Nav -->
-					<nav id="nav">
+			{% include nav.html %}
 
-            {% include nav.html %}
+				<ul class="icons">
+					<li><a href="https://weibo.com/u/{{site.weibo}}" class="icon fa-weibo" rel="nofollow"><span class="label">Weibo</span></a></li>
+					<li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+					<li><a href="https://renren.com/{{site.renren}}" class="icon fa-renren" rel="nofollow"><span class="label">Renren</span></a></li>
+					<li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
 
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+			<!-- Main -->
+			<div id="main">
 
-				<!-- Main -->
-				<div id="main">
+				<article class="post featured">
+					<header class="major">
+					<h3>Yao Wang's blog</h3>
+					<p>Here's my blog, mainly about frontend and machine learning techniques.</p>
+					</header>
+				</article>
 
-          <article class="post featured">
-            <header class="major">
-              <h2><a href="#">Importance of Blogs</a></h2>
-              <p>Blogs are really pretty awesome things. For one, they are a means to continually provide fresh,
-                dynamic content to your users. Also, they help your site get indexed and build authority as they are essential for SEO!
-							</p>
-            </header>
-						<p>
-							Content fulfills the general population seeing your website and it likewise fulfills web indexes!
-						<p>
-						</p>
-							At that point, rather than pushing something superfluous to your users, you can give them something that will stick.
-						</p>
-
-          </article>
-					<!-- Post -->
-					<section class="posts">
-						{% for post in site.posts %}
+				<!-- Post -->
+				<section class="posts">
+					{% for post in site.posts %}
 						{% assign mod3 = forloop.index | modulo: 3 %}
-							<article>
-								<header>
-									<span class="date">{{ post.date | date_to_string }}</span>
-									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-								</header>
-								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-								<p>{{ post.excerpt }}</p>
-								<ul class="actions">
-									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-								</ul>
-							</article>
-							{% if mod3 == 0 %}
-							<article>
-								<header>
-									<h2><a href="#">Sponsored</a></h2>
-								</header>
+						<article>
+							<header>
+							<span class="date">{{ post.date | date_to_string }}</span>
+							<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+							</header>
+							<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+							<p>{{ post.excerpt }}</p>
+							<ul class="actions">
+								<li><a href="{{ post.url | absolute_url }}" class="button">Full Article</a></li>
+							</ul>
+						</article>
+						{% if mod3 == 0 %}
+						<article>
+							<header>
+								<h2><a href="#">Sponsored</a></h2>
+							</header>
 
-							</article>
-							{% endif %}
-						{% endfor %}
-
-					</section>
-
-					</div>
-
-				<!-- Footer -->
-        {% include foot.html %}
-
+						</article>
+						{% endif %}
+					{% endfor %}
+				</section>
 			</div>
 
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
+		<!-- Footer -->
+		{% include foot.html %}
+
+		</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+		{% include tracking.html %}
 
 	</body>
 </html>

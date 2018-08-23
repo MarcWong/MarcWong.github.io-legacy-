@@ -1713,21 +1713,21 @@
 		margin: 0 0 1rem 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			border-bottom: 0;
-			color: inherit;
-			text-decoration: none;
-		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		border-bottom: 0;
+		color: inherit;
+		text-decoration: none;
+	}
 
 	h1 {
-		font-size: 4rem;
+		font-size: 2.5rem;
 		line-height: 1.1;
 		margin: 0 0 2rem 0;
 	}
 
 	h2 {
 		font-size: 1.75rem;
-		line-height: 1.3;
+		line-height: 1.1;
 		margin: 0 0 1.5rem 0;
 	}
 
@@ -3083,7 +3083,7 @@
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 4rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3108,7 +3108,7 @@
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 50vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3594,7 +3594,7 @@
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
+				font-size: 2.5rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}

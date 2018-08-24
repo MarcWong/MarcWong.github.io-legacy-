@@ -2413,6 +2413,12 @@
 
 /* Image */
 
+	img{
+		display: block;
+		max-width: 100%;
+		margin:auto;
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2723,10 +2729,6 @@
 			position: relative;
 		}
 
-		header > p {
-			font-style: italic;
-		}
-
 		header > h1 + p {
 			font-size: 1.1rem;
 			margin-top: -0.5rem;
@@ -2749,7 +2751,7 @@
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 0 0;
 			text-align: center;
 		}
 

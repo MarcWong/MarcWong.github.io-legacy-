@@ -1,0 +1,159 @@
+<script>
+url = document.URL;
+var keyword =  URLParser(url).getQuery('keyword');
+console.log(keyword);
+// 请求 API 获得数据
+var tagsData;
+var xhrPosts = new XMLHttpRequest();
+xhrPosts.open('GET', '/posts.json', true);
+xhrPosts.onreadystatechange = function() {
+    if (xhrPosts.readyState == 4 && xhrPosts.status == 200) {
+        tagsData = JSON.parse(xhrPosts.responseText);
+        if(keyword){
+            tags(decodeURI(keyword));
+        }
+    }
+}
+xhrPosts.send(null);
+
+// 显示 tag 对应文章标题列表并修改 title 等
+function tags (keyword){
+    var title = '标签：' + keyword + ' | Fooleap\'s Blog';
+    var url = '/blog?keyword=' + keyword;
+    var tagsTable = document.getElementById('tags-table');
+    tagsTable.style.display = 'table';
+    tagsTable.querySelector('thead tr').innerHTML = '<th colspan=2>以下是标签为“'+keyword+'”的所有文章</th>';
+    var html = '';
+    tagsData.forEach(function(item){
+        if( item.tags.indexOf(keyword) > -1){
+            var date = item.date.slice(0,10).split('-');
+            date = date[0] + ' 年 ' + date[1] + ' 月 ' + date[2] + ' 日';
+            html += '<tr>'+
+                 '<td><time>'+date+'</time></td>'+
+                 '<td><a href="'+item.url+'" title="'+item.title+'">'+item.title+'</a></td>'+
+                 '</tr>';
+        }
+    })
+    tagsTable.getElementsByTagName('tbody')[0].innerHTML = html;
+    document.title = title;
+    history.replaceState({ 
+        "title": title,
+        "url": url 
+    }, title, url);
+}
+
+// 给 tag 链接绑定事件
+var tagLinks = document.getElementsByClassName('post-tags-item');
+var tagCount = tagLinks.length;
+for (var i = 0; i < tagCount; i++){
+    tagLinks[i].addEventListener('click', function(e){
+        tags(e.currentTarget.title);
+        e.preventDefault();
+    }, false);
+}
+
+function URLParser(u){
+    console.log(u);
+    var path="",query="",hash="",params;
+    if(u.indexOf("#") > 0){
+        hash = u.substr(u.indexOf("#") + 1);
+        u = u.substr(0 , u.indexOf("#"));
+    }
+    if(u.indexOf("?") > 0){
+        path = u.substr(0 , u.indexOf("?"));
+        query = u.substr(u.indexOf("?") + 1);
+        params= query.split('&');
+    }else
+        path = u;
+    return {
+        getHost: function(){
+            var hostexp = /\/\/([\w.-]*)/;
+            var match = hostexp.exec(path);
+            if (match != null && match.length > 1)
+                return match[1];
+            return "";
+        },
+        getPath: function(){
+            var pathexp = /\/\/[\w.-]*(?:\/([^?]*))/;
+            var match = pathexp.exec(path);
+            if (match != null && match.length > 1)
+                return match[1];
+            return "";
+        },
+        getHash: function(){
+            return hash;
+        },
+        getParams: function(){
+            return params
+        },
+        getQuery: function(value){
+            return query.replace(value + '=',"");
+        },
+        setHash: function(value){
+            if(query.length > 0)
+                query = "?" + query;
+            if(value.length > 0)
+                query = query + "#" + value;
+            return path + query;
+        },
+        setParam: function(name, value){
+            if(!params){
+                params= new Array();
+            }
+            params.push(name + '=' + value);
+            for (var i = 0; i < params.length; i++) {
+                if(query.length > 0)
+                    query += "&";
+                query += params[i];
+            }
+            if(query.length > 0)
+                query = "?" + query;
+            if(hash.length > 0)
+                query = query + "#" + hash;
+            return path + query;
+        },
+        getParam: function(name){
+            if(params){
+                for (var i = 0; i < params.length; i++) {
+                    var pair = params[i].split('=');
+                    if (decodeURIComponent(pair[0]) == name)
+                        return decodeURIComponent(pair[1]);
+                }
+            }
+            console.log('Query variable %s not found', name);
+        },
+        hasParam: function(name){
+            if(params){
+                for (var i = 0; i < params.length; i++) {
+                    var pair = params[i].split('=');
+                    if (decodeURIComponent(pair[0]) == name)
+                        return true;
+                }
+            }
+            console.log('Query variable %s not found', name);
+        },
+        removeParam: function(name){
+            query = "";
+            if(params){
+                var newparams = new Array();
+                for (var i = 0;i < params.length;i++) {
+                    var pair = params[i].split('=');
+                    if (decodeURIComponent(pair[0]) != name)
+                          newparams .push(params[i]);
+                }
+                params = newparams;
+                for (var i = 0; i < params.length; i++) {
+                    if(query.length > 0)
+                        query += "&";
+                    query += params[i];
+                }
+            }
+            if(query.length > 0)
+                query = "?" + query;
+            if(hash.length > 0)
+                query = query + "#" + hash;
+            return path + query;
+        },
+    }
+}
+</script>

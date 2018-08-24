@@ -38,8 +38,24 @@
 
 				<article class="post featured">
 					<header class="major">
-					<h3>Yao Wang's blog</h3>
-					<p>Here's my blog, mainly about frontend and machine learning techniques.</p>
+					<h3>Popular Tags</h3>
+
+					{% for tag in site.tags %}
+						{% assign count = tag | last | size %}
+						{% assign fontsize = count | times: 4 %}
+						{% if count  > 0 %}
+						<a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}" title="{{ tag | first }}" data-count="{{ count }}" style="font-size: {% if fontsize > 24 %}24{% else %}{{ fontsize }}{% endif %}px">{{ tag | first }}</a>
+						{% endif %}
+					{% endfor %}
+
+					<table id="tags-table" style="display: none">
+						<thead>
+							<tr></tr>
+							<tr></tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
 					</header>
 				</article>
 
@@ -70,6 +86,7 @@
 		<!-- Scripts -->
 		{% include scripts-main.html %}
 		{% include tracking.html %}
+		{% include blogQuery.html %}
 
 	</body>
 </html>

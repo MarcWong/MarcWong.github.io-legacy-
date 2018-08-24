@@ -3,6 +3,7 @@ layout: post
 title:  "[备忘] Ubuntu16.04显卡驱动及Cuda安装"
 date:   2017-11-1
 excerpt: "Ubuntu16.04显卡驱动及Cuda安装的踩坑记录"
+tags: "Cuda"
 ---
 
 # ubuntu 16.04安装

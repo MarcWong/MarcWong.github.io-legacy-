@@ -61,6 +61,7 @@ sitemap:
 ###### Technical Report:
 
 - Tao Hu, **Yao Wang**, Yisong Chen, et al. Devils in Semantic Segmentation &nbsp;&nbsp;&nbsp; <a href="/pdfs/devil-18.pdf" class="button small">View Paper</a>
+- **Yao Wang**, Yisong Chen, Guoping Wang. Semantic Segmentation Refinement Based on Image Time Series Context &nbsp;&nbsp;&nbsp; <a href="/pdfs/ssrboitsc-mpr17.pdf" class="button small">View Paper</a>
 
 <hr/>
 <h2 class="icon fa-graduation-cap">&nbsp;Education Experience</h2>

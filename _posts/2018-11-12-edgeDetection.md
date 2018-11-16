@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[笔记]"
+title:  "[笔记]edge detection综述"
 date:   2018-11-12
-excerpt: "edge detection综述"
+excerpt: "edge detection综述,传统滤波,人造特征,基于patch的学习和深度学习"
 tags: "edge detection"
 ---
 

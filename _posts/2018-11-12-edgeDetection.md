@@ -12,7 +12,7 @@ tags: "edge detection"
 ``...edge points are far more plentiful and often carry important semantic associations.``
 
 
-## 1.1 a.基于滤波的方法
+## 1.1 基于滤波的方法
 
 梯度: 
 
@@ -20,24 +20,24 @@ $$\bm{J}(\bm{x}) = \nabla I(\bm{x}) = \frac{\partial I}{\partial x}$$
 
 ![](/images/blog1112/2018-11-16-15-14-40.png)
 
-- roberts 对角差分
+- **roberts 对角差分**
 
 ![](/images/blog1112/2018-11-16-15-16-11.png)
 
-- prewitt 一阶模版
+- **prewitt 一阶模版**
 
 ![](/images/blog1112/2018-11-16-15-16-19.png)
 
-- sobel 一阶模版
+- **sobel 一阶模版，最广泛使用的滤波方法**
 
 ![](/images/blog1112/2018-11-16-15-16-25.png)
 ![](/images/blog1112/2018-11-16-15-41-20.png)
 
-- laplacian 二阶，各向同性
+- **laplacian 二阶，各向同性**
 
 ![](/images/blog1112/2018-11-16-15-16-30.png)
 
-- canny 应用最广
+- **canny 集大成者**
 
 1. 高斯滤波平滑图像
 2. 一阶偏导求梯度强度及方向
@@ -48,9 +48,9 @@ $$\bm{J}(\bm{x}) = \nabla I(\bm{x}) = \frac{\partial I}{\partial x}$$
 
 ## 1.2 其他方法
 
-- [hough变换](http://www.dtic.mil/dtic/tr/fulltext/u2/a457992.pdf)
+- ## [hough变换](http://www.dtic.mil/dtic/tr/fulltext/u2/a457992.pdf)
 
-- [snake(active contour model)](http://graphics.hallym.ac.kr/teach/2009/tcg/src/IJCV98Kass.pdf)
+- ## [snake(active contour model)](http://graphics.hallym.ac.kr/teach/2009/tcg/src/IJCV98Kass.pdf)
 
 $$\bm{J}(𝑠𝑛𝑎𝑘𝑒) = \bm{J}(int)+\bm{J}(ext)+\bm{J}(cons)$$
 
@@ -58,42 +58,50 @@ $$\bm{J}(int) = \bm{J}(coutin)+\bm{J}(smooth) = \alpha(s)|\frac{dC}{ds}|^2 + \be
 
 $$\bm{J}(ext) = \gamma(s)|\nabla I^2|$$
 
-# 2. 基于信息论与人造特征的方法
+# 2. 基于(人造)结构特征的方法
 
-- [statistical edges](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1159946)
+- **[statistical edges](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1159946)**
+- **[Pb: Learning to detect natural image boundaries using local brightness, color, and texture cues](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.436.589&rep=rep1&type=pdf)**
+- **[gPb: Contour Detection and Hierarchical Image Segmentation](http://web.archive.org/web/20160306144814/http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf)**
 
-- [Pb: Learning to detect natural image boundaries using local brightness, color, and texture cues](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.436.589&rep=rep1&type=pdf)
-- [gPb: Contour Detection and Hierarchical Image Segmentation](http://web.archive.org/web/20160306144814/http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/amfm_pami2010.pdf)
+- **[Structed Edge](https://arxiv.org/pdf/1406.5549.pdf)**
+
+  [openCV实现](https://docs.opencv.org/3.1.0/d0/da5/tutorial_ximgproc_prediction.html)
+
+![](/images/blog1112/SE/01.jpg)
+![](/images/blog1112/SE/02.jpg)
+![](/images/blog1112/SE/03.jpg)
+![](/images/blog1112/SE/04.jpg)
+![](/images/blog1112/SE/06.jpg)
+![](/images/blog1112/SE/09.jpg)
 
 # 3. 基于神经网路的边缘检测
 
 ## 3.1 patch based
 
-- [N4-field](https://arxiv.org/pdf/1406.6558.pdf)
+- **[N4-field](https://arxiv.org/pdf/1406.6558.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-25-10.png)
 
-- [DeepEdge](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Bertasius_DeepEdge_A_Multi-Scale_2015_CVPR_paper.pdf)
+- **[DeepEdge](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Bertasius_DeepEdge_A_Multi-Scale_2015_CVPR_paper.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-25-20.png)
 #### 对N4-Fields工作的延伸。首先使用Canny edge得到候选轮廓点，然后对这些点建立不同尺度的patch，将这些 patch 输入两路的CNN，一路用作分类，一路用作回归。最后得到每个候选轮廓点的概率。
 
-- [DeepContour](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Shen_DeepContour_A_Deep_2015_CVPR_paper.pdf)
+- **[DeepContour](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Shen_DeepContour_A_Deep_2015_CVPR_paper.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-25-54.png)
 
 #### 在训练集上对边缘图像先进行聚类，得到不同类别。 这一个聚类的步骤，正好将边缘检测转换成了图片分类的问题。
 #### 利用CNN，训练分类的模型。训练的损失函数由2部分构成，第一部分是常用的Softmax的损失函数；第二部分主要强化：允许错误出现在不同边缘的类之间，但不允许将边缘的正类划分成不含有边缘的负类。
 
-- [HFL](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Bertasius_High-for-Low_and_Low-for-High_ICCV_2015_paper.pdf)
+- **[HFL](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Bertasius_High-for-Low_and_Low-for-High_ICCV_2015_paper.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-26-23.png)
 
-- [Structed Edge](https://arxiv.org/pdf/1406.5549.pdf)
-
 ## 3.2 end-to-end
 
-- [Holistically-nested Edge Detection](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Xie_Holistically-Nested_Edge_Detection_ICCV_2015_paper.pdf)
+- **[Holistically-nested Edge Detection](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Xie_Holistically-Nested_Edge_Detection_ICCV_2015_paper.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-30-23.png)
 
@@ -109,13 +117,16 @@ $$\bm{J}(ext) = \gamma(s)|\nabla I^2|$$
 
 ![](/images/blog1112/2018-11-16-15-30-07.png)
 
-- [ITERATIVE RESIDUAL NETWORK FOR STRUCTURED EDGE DETECTION ](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8466129)
+- **[ITERATIVE RESIDUAL NETWORK FOR STRUCTURED EDGE DETECTION ](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8466129)**
 
 ![](/images/blog1112/2018-11-16-15-29-54.png)
 ![](/images/blog1112/2018-11-16-15-29-44.png)
 
-- [Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Chen_Semantic_Image_Segmentation_CVPR_2016_paper.pdf)
-- [RCF: Richer Convolutional Features for Edge Detection](http://mftp.mmcheng.net/liuyun/rcf/cvpr17-rcf.pdf)
+- **[Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Chen_Semantic_Image_Segmentation_CVPR_2016_paper.pdf)**
+
+这篇是deeplab团队的另一个工作
+
+- **[RCF: Richer Convolutional Features for Edge Detection](http://mftp.mmcheng.net/liuyun/rcf/cvpr17-rcf.pdf)**
 
 ![](/images/blog1112/2018-11-16-15-29-35.png)
 

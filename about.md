@@ -3,9 +3,9 @@ layout: page
 title: Yao Wang - About me
 description: This is all about Yao Wang.
 sitemap:
-    priority: 0.7
-    lastmod: 2018-08-23
-    changefreq: weekly
+    priority: 1.0
+    lastmod: 2018-11-29
+    changefreq: monthly
 ---
 # Yao Wang(王尧)
 
@@ -69,15 +69,16 @@ sitemap:
 <h2 class="icon fa-flask">&nbsp;Research Experience</h2>
 
 #### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *sept. 2016 -- present*
+Student Researcher
+*Advisor : Yisong Chen*
 
-Student Researcher *Advisor : Yisong Chen*
-
-- Extensively engaged in research of semantic segmentation. Familiar with tensorflow.
+- Extensively engaged in research of edge detection. Familiar with Matlab and openCV(C++).
 - Implemented Non Maximum Suppression(NMS) and Snake algorithm in matlab, designed post process framework of Edge Detection network.
+- Annotated [Urban Drone Dataset](https://mrright.wang/UDD), a semantic segmentation dataset for drone.
 
 #### University of California, Los Angeles, California, USA &nbsp;&nbsp;&nbsp; *Jun. 2016 - Sept. 2016*
-
-Summer Intern *Manager: Fabien Scalzo*
+Summer Intern
+*Manager: Fabien Scalzo*
 
 - Developed a flow tractography visualization method for MR images
 - Familiar with MATLAB image processing toolbox. Familiar with image morphing and filtering.
@@ -90,11 +91,11 @@ Summer Intern *Manager: Fabien Scalzo*
 CTO
 
 - Engaged in laravel(php) structure by using MVC / MVVM software developing pattern, learned and practiced languages including Vue.JS, JQuery and Wechat Miniprogram.
-- Made schedules and milestones of software developing for the company, familiar with Scrum and Kanban agile development processes.
+- Lead the develop team of 8 members (2 full-time, 6 part-time)
 
 #### Shenzhen Miandanjun(offpay) Co.,Ltd., Shenzhen, China &nbsp;&nbsp;&nbsp; *July. 2018 -- present*
 
 CTO
 
 - Expertized in mpvue(miniprogram in vue.js), designed frontend framework.
-- Lead the develop team of 8 members (2 full-time, 6 part-time)
+- Made schedules and milestones of software developing for the company, familiar with Scrum and Kanban agile development processes.

@@ -8,7 +8,7 @@ tags: "Cuda"
 
 # ubuntu 16.04安装
 
-### 启动选项
+### 0.启动选项
 
 安装时，选择"install ubuntu"后，按"e"进入编辑模式，进入命令行模式, 然后去掉"--"后，依照不同显卡进行不同显卡驱动选项的添加
 
@@ -18,7 +18,7 @@ tags: "Cuda"
 
 > 按下 F10 / CTRL+X 继续安装
 
-### 如果当安装结束后，启动系统出现黑画面
+### 1.如果当安装结束后，启动系统出现黑画面
 
 - 1.开机，进入grub画面(如果硬碟没有别的OS,请开机时按住shift不放才会有grub画面)
 - 2.按'''e''' 进入编辑开机指令的模式, 同样找到'''quite splash''' 并在后面加上对应的字。
@@ -28,7 +28,7 @@ tags: "Cuda"
 - 6.更新GRUB： sudo update-grub
 - 7.存档，并重新开机。
 
-### 更改启动分辨率：
+### 2.更改启动分辨率：
 
 - 方法一：
 ```
@@ -41,6 +41,21 @@ sudo gedit /etc/default/grub
 sudo gedit　/boot/grub/grub.cfg
 ```
 将GRUB_GFXPAYLOAD_LINUX改成目标分辨率，去掉注释
+
+### 3.必备软件安装脚本
+
+*请将如下三个文件下载到同一目录下*
+
+<a href="/scripts/ubuntu/sources.list" class="button small">sources.list</a>
+
+<a href="/scripts/ubuntu/ubuntuInstall.sh" class="button small">ubuntuInstall.sh</a>
+
+<a href="/scripts/ubuntu/docker.sh" class="button small">docker.sh</a>
+
+``` bash
+./ubuntuInstall.sh
+./docker.sh
+```
 
 # nvidia driver/cuda安装
 

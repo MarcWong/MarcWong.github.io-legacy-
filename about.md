@@ -52,10 +52,14 @@ sitemap:
 - <a href="https://www.ahajournals.org/doi/abs/10.1161/str.48.suppl_1.tp55">**Wang, Yao**, David Shattuck, Jeffrey Saver, David Liebeskind, and Fabien Scalzo. "Abstract TP55: Spatio-temporal Flow Tractography (SFT) for Evaluation of Collateral Patterns in Acute Stroke." Stroke 48, no. suppl_1 (2017): ATP55-ATP55.</a> &nbsp;&nbsp;&nbsp; <a href="/pdfs/SFT-as17.pdf" class="button small">View Paper</a>
 - <a href="https://link.springer.com/chapter/10.1007/978-3-319-50835-1_4">Ding Y, Nicolescu M, Farmer D, **Wang Y**, Bebis G, Scalzo F. Tensor Voting Extraction of Vessel Centerlines from Cerebral Angiograms. InInternational Symposium on Visual Computing 2016 Dec 12 (pp. 35-44). Springer, Cham.</a> &nbsp;&nbsp;&nbsp; <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-319-50835-1_4.pdf" class="button small">View Paper</a>
 
+
+###### To Be Published:
+Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; <a href="/pdfs/s3d-MDPI19.pdf" class="button small">View Paper</a>
+
 ###### Technical Report:
 
-- Hu T, **Wang Y**, Chen Y, et al. Devils in Semantic Segmentation &nbsp;&nbsp;&nbsp; <a href="/pdfs/devil-18.pdf" class="button small">View Paper</a>
-- **Wang Y**, Chen Y, Wang G. Semantic Segmentation Refinement Based on Image Time Series Context &nbsp;&nbsp;&nbsp; <a href="/pdfs/ssrboitsc-mpr17.pdf" class="button small">View Paper</a>
+- Devils in Semantic Segmentation &nbsp;&nbsp;&nbsp; <a href="/pdfs/devil-18.pdf" class="button small">View Paper</a>
+- Semantic Segmentation Refinement Based on Image Time Series Context &nbsp;&nbsp;&nbsp; <a href="/pdfs/ssrboitsc-mpr17.pdf" class="button small">View Paper</a>
 
 <hr/>
 <h2 class="icon fa-graduation-cap">&nbsp;Education Experience</h2>
@@ -93,7 +97,7 @@ CTO
 - Engaged in laravel(php) structure by using MVC / MVVM software developing pattern, learned and practiced languages including Vue.JS, JQuery and Wechat Miniprogram.
 - Lead the develop team of 8 members (2 full-time, 6 part-time)
 
-#### Shenzhen Miandanjun(offpay) Co.,Ltd., Shenzhen, China &nbsp;&nbsp;&nbsp; *July. 2018 -- present*
+#### Shenzhen Miandanjun(offpay) Co.,Ltd., Shenzhen, China &nbsp;&nbsp;&nbsp; *July. 2018 -- Oct. 2019*
 
 CTO
 

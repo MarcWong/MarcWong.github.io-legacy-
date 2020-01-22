@@ -54,7 +54,7 @@ sitemap:
 
 
 ###### To Be Published:
-Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; Applied Sciences, MDPI <a href="/pdfs/applsci-688337" class="button small">View Paper</a>
+Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; Applied Sciences, MDPI <a href="/pdfs/applsci-688337.pdf" class="button small">View Paper</a>
 
 ###### Technical Report:
 

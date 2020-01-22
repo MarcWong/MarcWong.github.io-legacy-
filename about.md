@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Yao Wang - About me
-description: This is all about Yao Wang.
+description: Yao Wang, a Ph.D. candidate in Computer Vision.
 sitemap:
     priority: 1.0
-    lastmod: 2018-11-29
-    changefreq: monthly
+    lastmod: 2020-1-22
+    changefreq: yearly
 ---
-# Yao Wang(王尧)
+# Yao (Marc) Wang 王尧
 
 <div class="box">
   <span class="image left"><img src="{{ "/images/profile.jpg" | absolute_url }}" alt="" /></span>
@@ -33,11 +33,11 @@ sitemap:
 				</tr>
 				<tr>
 					<td class="icon fa-bullseye">&nbsp;Skills</td>
-					<td>JS, C++, MATLAB, Python, XML</td>
+					<td>Python, MATLAB, C++, JS, XML, Git, Bash</td>
 				</tr>
-        <tr>
+        		<tr>
 					<td class="icon fa-globe">&nbsp;Languages</td>
-					<td>Mandarin (native), English, German</td>
+					<td>Mandarin(native), English(TOEFL 98), German</td>
 				</tr>
 			</tbody>
 		</table>
@@ -54,7 +54,7 @@ sitemap:
 
 
 ###### To Be Published:
-Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; <a href="/pdfs/s3d-MDPI19.pdf" class="button small">View Paper</a>
+Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; Applied Sciences, MDPI <a href="/pdfs/applsci-688337" class="button small">View Paper</a>
 
 ###### Technical Report:
 
@@ -66,7 +66,7 @@ Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Image
 
 #### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *sept.2013 -- present*
 
-- B.S in Center for Information Science
+- B.S in Intelligence Science and Technology
 - M.S in Computer Science
 
 <hr/>
@@ -74,32 +74,35 @@ Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Image
 
 #### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *sept. 2016 -- present*
 Student Researcher
-*Advisor : Yisong Chen*
+*Manager : Yisong Chen*
 
-- Extensively engaged in research of edge detection. Familiar with Matlab and openCV(C++).
-- Implemented Non Maximum Suppression(NMS) and Snake algorithm in matlab, designed post process framework of Edge Detection network.
-- Annotated [Urban Drone Dataset](https://mrright.wang/UDD), a semantic segmentation dataset for drone.
+- Familiar with the theory of edge detection, multi-view stereo and semantic segmentation.
+- Skilled in the workflow of semantic segmentation and depth estimation tasks, capable of efficiently providing pyTorch implementation contingent on the network structure diagram described in the paper
+- Designed the protocol and labeled the urban drone semantic segmentation Dataset [Urban Drone Dataset(UDD)](https://mrright.wang/UDD)
+- Reduced the feature matching errors by segmentation information to enhance the performance of sparse reconstruction, which was published in \textit{PRCV 2018}
+- Built a semantic reconstruction pipeline based on OpenMVS and Deeplab, which was submitted to \textit{Applied Science}
+
 
 #### University of California, Los Angeles, California, USA &nbsp;&nbsp;&nbsp; *Jun. 2016 - Sept. 2016*
 Summer Intern
 *Manager: Fabien Scalzo*
 
-- Developed a flow tractography visualization method for MR images
-- Familiar with MATLAB image processing toolbox. Familiar with image morphing and filtering.
+- Became familiar with voxel construction and visualization method for blood flow in MR images
+- Became familiar with the MATLAB image processing toolbox, especially image morphing and filtering
+
 
 <hr/>
-<h2 class="icon fa-briefcase">&nbsp;Enterprice Experience</h2>
+<h2 class="icon fa-briefcase">&nbsp;Social Experience</h2>
 
 #### Beijing Yidian Technology Co.,Ltd., Beijing, China &nbsp;&nbsp;&nbsp; *July. 2017 -- May. 2018*
-
 CTO
 
 - Engaged in laravel(php) structure by using MVC / MVVM software developing pattern, learned and practiced languages including Vue.JS, JQuery and Wechat Miniprogram.
 - Lead the develop team of 8 members (2 full-time, 6 part-time)
 
-#### Shenzhen Miandanjun(offpay) Co.,Ltd., Shenzhen, China &nbsp;&nbsp;&nbsp; *July. 2018 -- Oct. 2019*
+#### Student Union of school of EECS}, Beijing, China &nbsp;&nbsp;&nbsp; *Sept. 2015 -- Jun. 2016*
+Chairman
 
-CTO
-
-- Expertized in mpvue(miniprogram in vue.js), designed frontend framework.
-- Made schedules and milestones of software developing for the company, familiar with Scrum and Kanban agile development processes.
+- Founder of HackPKU, which attracted over 200 participants from PKU, THU, NYU and more universities.
+- Applauded by the leaders of the college, it has been hosted for three times since and has become an iconic yearly event in our department.
+- The main sponsoring companies of the event include IBM, Microsoft, Sensetime, Nsfocus, QCloud, Umeng+ and Sohu.

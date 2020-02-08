@@ -33,11 +33,11 @@ sitemap:
 				</tr>
 				<tr>
 					<td class="icon fa-bullseye">&nbsp;Skills</td>
-					<td>Python, MATLAB, C++, JS, XML, Git, Bash</td>
+					<td>Python, MATLAB, C++, JS, Git, Bash</td>
 				</tr>
         		<tr>
 					<td class="icon fa-globe">&nbsp;Languages</td>
-					<td>Mandarin(native), English(TOEFL 98), German</td>
+					<td>Mandarin(native), English(TOEFL 98), German(B1)</td>
 				</tr>
 			</tbody>
 		</table>

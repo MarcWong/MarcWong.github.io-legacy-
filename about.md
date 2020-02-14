@@ -4,7 +4,7 @@ title: Yao Wang - About me
 description: Yao Wang, a Ph.D. candidate in Computer Vision.
 sitemap:
     priority: 1.0
-    lastmod: 2020-1-22
+    lastmod: 2020-2-14
     changefreq: yearly
 ---
 # Yao (Marc) Wang 王尧
@@ -25,7 +25,7 @@ sitemap:
 				</tr>
 				<tr>
 					<td class="icon fa-envelope">&nbsp;E-mail</td>
-					<td>yao.staufenberg@gmail.com</td>
+					<td>yaowang95@pku.edu.cn(work), yao.staufenberg@gmail.com(personal)</td>
 				</tr>
 				<tr>
 					<td class="icon fa-phone">&nbsp;Phone</td>
@@ -47,14 +47,11 @@ sitemap:
 <hr/>
 <h2 style="clear:both" class="icon fa-bookmark">&nbsp;Publications</h2>
 
+- <a href="https://www.mdpi.com/2076-3417/10/4/1275/htm">Wei, Z.; **Wang, Y.**; Yi, H.; Chen, Y.; Wang, G. Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images. Appl. Sci. 2020, 10, 1275. &nbsp;&nbsp;&nbsp;<a href="https://www.mdpi.com/2076-3417/10/4/1275/pdf" class="button small">View Paper</a>
 - <a href="https://link.springer.com/chapter/10.1007/978-3-030-03398-9_30">Chen Y, **Wang Y**, Lu P, et al. Large-Scale Structure from Motion with Semantic Constraints of Aerial Images[C]//Chinese Conference on Pattern Recognition and Computer Vision (PRCV). Springer, Cham, 2018: 347-359.</a> &nbsp;&nbsp;&nbsp; <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-03398-9_30.pdf" class="button small">View Paper</a>
 - <a href="https://ieeexplore.ieee.org/abstract/document/8451170/">Hu T, **Wang Y**, Chen Y, et al. Sobel Heuristic Kernel for Aerial Semantic Segmentation[C]//2018 25th IEEE International Conference on Image Processing (ICIP). IEEE, 2018: 3074-3078.</a> &nbsp;&nbsp;&nbsp; <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8451170" class="button small">View Paper</a>
 - <a href="https://www.ahajournals.org/doi/abs/10.1161/str.48.suppl_1.tp55">**Wang, Yao**, David Shattuck, Jeffrey Saver, David Liebeskind, and Fabien Scalzo. "Abstract TP55: Spatio-temporal Flow Tractography (SFT) for Evaluation of Collateral Patterns in Acute Stroke." Stroke 48, no. suppl_1 (2017): ATP55-ATP55.</a> &nbsp;&nbsp;&nbsp; <a href="/pdfs/SFT-as17.pdf" class="button small">View Paper</a>
 - <a href="https://link.springer.com/chapter/10.1007/978-3-319-50835-1_4">Ding Y, Nicolescu M, Farmer D, **Wang Y**, Bebis G, Scalzo F. Tensor Voting Extraction of Vessel Centerlines from Cerebral Angiograms. InInternational Symposium on Visual Computing 2016 Dec 12 (pp. 35-44). Springer, Cham.</a> &nbsp;&nbsp;&nbsp; <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-319-50835-1_4.pdf" class="button small">View Paper</a>
-
-
-###### To Be Published:
-Semantic 3D Reconstruction with Learning MVS and 2D Segmentation of Aerial Images &nbsp;&nbsp;&nbsp; Applied Sciences, MDPI <a href="/pdfs/applsci-688337.pdf" class="button small">View Paper</a>
 
 ###### Technical Report:
 

@@ -75,9 +75,9 @@ Student Researcher
 
 - Familiar with the theory of edge detection, multi-view stereo and semantic segmentation.
 - Skilled in the workflow of semantic segmentation and depth estimation tasks, capable of efficiently providing pyTorch implementation contingent on the network structure diagram described in the paper
-- Designed the protocol and labeled the urban drone semantic segmentation Dataset [Urban Drone Dataset(UDD)](https://mrright.wang/UDD)
-- Reduced the feature matching errors by segmentation information to enhance the performance of sparse reconstruction, which was published in \textit{PRCV 2018}
-- Built a semantic reconstruction pipeline based on OpenMVS and Deeplab, which was submitted to \textit{Applied Science}
+- Designed the protocol and labeled the urban drone semantic segmentation Dataset [**Urban Drone Dataset(UDD)**](https://mrright.wang/UDD)
+- Reduced the feature matching errors by segmentation information to enhance the performance of sparse reconstruction, which was published in [**PRCV 2018**](https://link.springer.com/content/pdf/10.1007%2F978-3-030-03398-9_30.pdf)
+- Built a semantic reconstruction pipeline based on OpenMVS, R-Mvsnet and Deeplab, which was published in [**Applied Sciences**](https://www.mdpi.com/2076-3417/10/4/1275/pdf)
 
 
 #### University of California, Los Angeles, California, USA &nbsp;&nbsp;&nbsp; *Jun. 2016 - Sept. 2016*
@@ -97,7 +97,7 @@ CTO
 - Engaged in laravel(php) structure by using MVC / MVVM software developing pattern, learned and practiced languages including Vue.JS, JQuery and Wechat Miniprogram.
 - Lead the develop team of 8 members (2 full-time, 6 part-time)
 
-#### Student Union of school of EECS}, Beijing, China &nbsp;&nbsp;&nbsp; *Sept. 2015 -- Jun. 2016*
+#### Student Union of school of EECS, Beijing, China &nbsp;&nbsp;&nbsp; *Sept. 2015 -- Jun. 2016*
 Chairman
 
 - Founder of HackPKU, which attracted over 200 participants from PKU, THU, NYU and more universities.

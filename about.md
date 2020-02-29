@@ -4,7 +4,7 @@ title: Yao Wang - About me
 description: Yao Wang, a Ph.D. candidate in Computer Vision.
 sitemap:
     priority: 1.0
-    lastmod: 2020-2-14
+    lastmod: 2020-2-21
     changefreq: yearly
 ---
 # Yao (Marc) Wang 王尧
@@ -61,7 +61,7 @@ sitemap:
 <hr/>
 <h2 class="icon fa-graduation-cap">&nbsp;Education Experience</h2>
 
-#### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *sept.2013 -- present*
+#### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *Sept.2013 -- present*
 
 - B.S in Intelligence Science and Technology
 - M.S in Computer Science
@@ -69,7 +69,7 @@ sitemap:
 <hr/>
 <h2 class="icon fa-flask">&nbsp;Research Experience</h2>
 
-#### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *sept. 2016 -- present*
+#### Peking University, Beijing, China &nbsp;&nbsp;&nbsp; *Sept. 2016 -- present*
 Student Researcher
 *Manager : Yisong Chen*
 
